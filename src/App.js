@@ -71,6 +71,7 @@ class AppComponent extends React.Component {
                   <DropDownList
                       //menonaktifkan type saat kategori belum dipilih
                       disabled={!hasCategory}
+                      //
                       data={this.state.types}
                       textField="typeName"
                       onChange={this.typeChange}
@@ -84,6 +85,7 @@ class AppComponent extends React.Component {
                   <DropDownList
                       //menonaktifkan title saat type belum dipilih
                       disabled={!hasType}
+                      //
                       data={this.state.titles}
                       textField="titleName"
                       onChange={this.orderChange}
